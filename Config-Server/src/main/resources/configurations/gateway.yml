@@ -1,0 +1,26 @@
+server:
+  port: 8083
+eureka:
+  client:
+    register-with-eureka: false
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: bookservice
+          uri: http://localhost:9001
+          predicates:
+            - Path= /api/v1/book/**
+        - id: userservice
+          uri: http://localhost:9002
+          predicates:
+            - Path= /api/v1/user/**
+        - id: borrowservice
+          uri: http://localhost:9011
+          predicates:
+            - Path= /api/v1/borrow/**

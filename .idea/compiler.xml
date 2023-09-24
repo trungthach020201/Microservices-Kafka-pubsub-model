@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="APIgateway" />
+        <module name="ShipmentService" />
+        <module name="UserService" />
+        <module name="BookService" />
+        <module name="Discovery-Server" />
+        <module name="OrderService" />
+        <module name="Config-Server" />
+        <module name="PaymentService" />
+        <module name="BorrowService" />
+        <module name="EmployeeService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CommonService" target="17" />
+      <module name="ManageUserService" target="17" />
+      <module name="NotificationService" target="17" />
+      <module name="OrderService" target="17" />
+      <module name="PaymentService" target="17" />
+      <module name="ShipmentService" target="17" />
+      <module name="UserService" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIgateway" options="-parameters" />
+      <module name="BookService" options="-parameters" />
+      <module name="BorrowService" options="-parameters" />
+      <module name="CommonService" options="-parameters" />
+      <module name="Config-Server" options="-parameters" />
+      <module name="Discovery-Server" options="-parameters" />
+      <module name="EmployeeService" options="-parameters" />
+      <module name="ManageUserService" options="-parameters" />
+      <module name="NotificationService" options="-parameters" />
+      <module name="OrderService" options="-parameters" />
+      <module name="PaymentService" options="-parameters" />
+      <module name="ShipmentService" options="-parameters" />
+      <module name="UserService" options="-parameters" />
+    </option>
+  </component>
+</project>
